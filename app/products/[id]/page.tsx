@@ -22,7 +22,7 @@ export default function ShowProduct(){
     }, []);
 
     return (
-        <div className="p-8 flex flex-col items-center">
+        <div className="p-8 flex flex-col items-center dark:bg-black min-h-screen">
             <Link
                 href={"/products"}
                 className="mb-6 border rounded-lg px-4 py-1 bg-zinc-900 hover:bg-zinc-600 transition place-self-start">

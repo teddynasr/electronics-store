@@ -33,7 +33,7 @@ export default function ShowProducts() {
   const prevPage = () => setPageIndex((prev) => Math.max(prev - 1, 1));
 
   return (
-    <div className="p-8 flex flex-col items-center">
+    <div className="p-8 flex flex-col items-center dark:bg-black min-h-screen">
       <div 
         className="flex relative min-w-full justify-center">
           <Link
