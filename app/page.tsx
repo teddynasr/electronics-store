@@ -5,7 +5,7 @@ export default function Home() {
     <div className="flex flex-col min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
       <p
        className="absolute top-px font-mono text-3xl mt-20">
-        Welcome to my Electronics Store
+        Welcome to my Electronics Stores
       </p>
       <Link 
         href={"/products"}
