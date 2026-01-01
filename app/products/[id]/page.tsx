@@ -25,7 +25,7 @@ export default function ShowProduct(){
         <div className="p-8 flex flex-col items-center dark:bg-black min-h-screen">
             <Link
                 href={"/products"}
-                className="mb-6 border rounded-lg px-4 py-1 bg-zinc-900 hover:bg-zinc-600 transition place-self-start">
+                className="mb-6 border rounded-lg px-4 py-1 dark:bg-zinc-900 hover:bg-zinc-600 hover:text-white transition place-self-start">
                     Back
             </Link>
             { loading ? (
@@ -47,7 +47,7 @@ export default function ShowProduct(){
                     </h1>
                     <div
                     key={product.id}
-                    className="flex flex-col border rounded-lg p-4 bg-zinc-900 hover:bg-zinc-600 transition duration-300 gap-y-5 items-center"
+                    className="flex flex-col border rounded-lg p-4 dark:bg-zinc-900 hover:bg-zinc-600 hover:text-white transition duration-300 gap-y-5 items-center"
                     >
                     <h2 className="text-lg font-semibold">{product.name}</h2>
                     <Image

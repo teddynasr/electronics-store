@@ -38,7 +38,7 @@ export default function ShowProducts() {
         className="flex relative min-w-full justify-center">
           <Link
                 href={"/"}
-                className="absolute top-0 left-0 mb-6 border rounded-lg px-4 py-1 bg-zinc-900 hover:bg-zinc-600 transition">
+                className="absolute top-0 left-0 mb-6 border rounded-lg px-4 py-1 dark:bg-zinc-900 hover:bg-zinc-600 hover:text-white transition">
                     Home
             </Link>
           <h1 className="text-2xl font-bold mb-6">Products</h1>
@@ -56,7 +56,7 @@ export default function ShowProducts() {
             <Link
               key={product.id}
               href={`/products/${product.id}`}
-              className="flex flex-col border rounded-lg p-4 bg-zinc-900 hover:bg-zinc-600 transition duration-300 gap-y-5 items-center"
+              className="flex flex-col border rounded-lg p-4 dark:bg-zinc-900 hover:bg-zinc-600 hover:text-white transition duration-300 gap-y-5 items-center"
             >
               <h2 className="text-lg font-semibold">{product.name}</h2>
               <Image
