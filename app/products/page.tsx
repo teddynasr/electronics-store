@@ -34,7 +34,15 @@ export default function ShowProducts() {
 
   return (
     <div className="p-8 flex flex-col items-center">
-      <h1 className="text-2xl font-bold mb-6">Products</h1>
+      <div 
+        className="flex relative min-w-full justify-center">
+          <Link
+                href={"/"}
+                className="absolute top-0 left-0 mb-6 border rounded-lg px-4 py-1 bg-zinc-900 hover:bg-zinc-600 transition">
+                    Home
+            </Link>
+          <h1 className="text-2xl font-bold mb-6">Products</h1>
+        </div>
 
       {loading ? (
         <Image
